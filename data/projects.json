@@ -1,0 +1,35 @@
+[
+  {
+    "id": "project-1",
+    "title": "TODO: Project Title",
+    "summary": "TODO: One-line description of what this project does or solves.",
+    "stack": ["TODO", "Tech", "Stack"],
+    "problem": "TODO: What was the core problem or challenge you were addressing?",
+    "solution": "TODO: How did you approach and solve it? What did you build?",
+    "result": "TODO: What was the measurable outcome or impact?",
+    "repo": null,
+    "demo": null
+  },
+  {
+    "id": "project-2",
+    "title": "TODO: Project Title",
+    "summary": "TODO: One-line description.",
+    "stack": ["TODO", "Tech", "Stack"],
+    "problem": "TODO: What was the core problem?",
+    "solution": "TODO: How did you solve it?",
+    "result": "TODO: What was the outcome?",
+    "repo": null,
+    "demo": null
+  },
+  {
+    "id": "project-3",
+    "title": "TODO: Project Title",
+    "summary": "TODO: One-line description.",
+    "stack": ["TODO", "Tech", "Stack"],
+    "problem": "TODO: What was the core problem?",
+    "solution": "TODO: How did you solve it?",
+    "result": "TODO: What was the outcome?",
+    "repo": null,
+    "demo": null
+  }
+]

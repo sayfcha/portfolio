@@ -1,0 +1,128 @@
+{
+  "_schema": "Each entry under a level has: code (course code, e.g. ME50ab; optional, fill if you have it, else leave empty), title (course name in English), description (1-2 sentences, no em-dashes). To add a course, append an object to the relevant level's 'courses' array. TODO: fill in 'code' values where available, and the bachelor 'institution' field.",
+
+  "levels": [
+    {
+      "level": "Master, Robotics, Control & AI",
+      "institution": "Sorbonne Université / Arts et Métiers",
+      "courses": [
+        {
+          "code": "",
+          "title": "State Estimation and System Identification for Robotics",
+          "description": "Core estimation methods used in robotics, including the Kalman filter, Extended Kalman filter, and particle filters, alongside techniques for identifying the models of robotic systems."
+        },
+        {
+          "code": "",
+          "title": "Advanced Machine Learning",
+          "description": "An advanced course extending core supervised and unsupervised learning with topics such as kernel methods, ensemble methods, and probabilistic modeling."
+        },
+        {
+          "code": "",
+          "title": "Deep Learning",
+          "description": "Neural network architectures and training methods, including convolutional and recurrent networks, with applications to perception and prediction tasks."
+        },
+        {
+          "code": "",
+          "title": "Perception and Computer Vision for Robotics",
+          "description": "Image processing and visual perception for robotics, covering feature extraction and 3D scene understanding for navigation and manipulation."
+        },
+        {
+          "code": "",
+          "title": "AI for Robotics",
+          "description": "Application of machine learning and decision-making methods to robotic systems, connecting learning algorithms with perception and control pipelines."
+        },
+        {
+          "code": "",
+          "title": "Robot Operating System (ROS)",
+          "description": "Hands-on development with ROS for building modular robotic software, including nodes, messaging, and the integration of perception and control stacks."
+        },
+        {
+          "code": "",
+          "title": "Robot Manipulators",
+          "description": "Dynamic modeling of manipulator arms and state-feedback control techniques for trajectory tracking and stabilization."
+        },
+        {
+          "code": "",
+          "title": "Modeling and Control of Mobile Robots",
+          "description": "Kinematic and dynamic modeling of wheeled mobile robots, with control strategies for trajectory tracking and autonomous navigation."
+        },
+        {
+          "code": "",
+          "title": "Planning and Decision for Robotics",
+          "description": "Motion and task planning methods, including search-based and sampling-based path planning, and decision-making under uncertainty."
+        },
+        {
+          "code": "",
+          "title": "Nonlinear Control",
+          "description": "Analysis and control of nonlinear dynamical systems, covering Lyapunov stability and feedback linearization."
+        },
+        {
+          "code": "",
+          "title": "Robust Control",
+          "description": "Control design for systems subject to uncertainty and disturbances, ensuring stability and performance despite model variation."
+        },
+        {
+          "code": "",
+          "title": "Digital Signal Processing",
+          "description": "Sampling, filtering, and spectral analysis of discrete-time signals, with applications to sensor data conditioning and feature extraction for robotics."
+        },
+        {
+          "code": "",
+          "title": "C++ Programming",
+          "description": "Systems-level programming in C++ for performance-critical robotics and embedded applications."
+        }
+      ]
+    },
+    {
+      "level": "Bachelor, Mechanical Engineering",
+      "institution": "TODO: fill in institution",
+      "courses": [
+        {
+          "code": "",
+          "title": "Continuum Mechanics",
+          "description": "Advanced continuum mechanics for deformable solids and fluids. On the solid side: infinitesimal elasticity, anisotropic thermoelastic constitutive laws, the principle of virtual power applied to curvilinear media, energy theorems, and an introduction to geometric nonlinearities. On the fluid side: dimensional analysis, singular perturbations, and the viscous boundary layer at high Reynolds number."
+        },
+        {
+          "code": "",
+          "title": "Strength of Materials",
+          "description": "Application of continuum mechanics to elastic solids. Covers methods for solving three-dimensional linear elasticity problems (displacement and stress approaches, plane strain and plane stress) applied to traction, bending, and torsion, plus an introduction to beam theory (Bernoulli and Timoshenko models) and energy methods (Castigliano and Menabrea theorems) for statically indeterminate structures, supported by experimental lab work."
+        },
+        {
+          "code": "",
+          "title": "Fluid Dynamics 2",
+          "description": "Conservation laws (mass, momentum, energy) and constitutive laws for single-phase flows. Covers incompressible flows (simplified Navier-Stokes equations, exact solutions, similarity numbers, the Prandtl boundary layer and the Blasius solution) and compressible flows (total thermodynamic quantities, aerodynamic heating, shock-wave structure, quasi-1D flows), with numerical lab work on real flow problems."
+        },
+        {
+          "code": "",
+          "title": "Numerical Methods and Functional Analysis",
+          "description": "Mathematical foundations of numerical simulation. Part one covers the variational formulation of elliptic PDEs (Lax-Milgram theorem, Sobolev spaces) and the finite element method, including P1 and P2 elements, convergence and error estimates, and elements in higher dimensions. Part two covers complex analysis, including holomorphic functions, Cauchy's integral formula, Laurent series, and the residue theorem."
+        },
+        {
+          "code": "",
+          "title": "Analytical Mechanics",
+          "description": "Lagrangian and Hamiltonian formulations of mechanics, providing the foundation for the dynamic modeling of multibody and robotic systems."
+        },
+        {
+          "code": "",
+          "title": "Rigid Body and Multibody Dynamics",
+          "description": "Kinematics, statics, and dynamics of rigid bodies and multibody systems using the screw (torsor) formalism, covering inertia matrices, the fundamental principles of statics and dynamics, and the derivation of equations of motion."
+        },
+        {
+          "code": "",
+          "title": "Design, System Simulation and Robotics",
+          "description": "Mechanical design and system-level simulation with an introduction to robotics, bridging modeling and physical implementation."
+        },
+        {
+          "code": "",
+          "title": "Scientific Algorithms and Programming",
+          "description": "Algorithmic foundations and scientific computing for solving engineering and simulation problems."
+        },
+        {
+          "code": "",
+          "title": "Vibrations",
+          "description": "Analysis of oscillatory mechanical systems, modal analysis, and the dynamic response of structures."
+        }
+      ]
+    }
+  ]
+}

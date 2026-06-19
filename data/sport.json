@@ -1,0 +1,24 @@
+{
+  "_schema": "Each entry has: discipline (sport name), detail (rank, level, or short description), stat (optional headline figure such as a time or record, leave empty if none), note (optional extra context, leave empty if none). To add an entry, append an object to the 'entries' array.",
+
+  "entries": [
+    {
+      "discipline": "Judo",
+      "detail": "Brown belt",
+      "stat": "",
+      "note": ""
+    },
+    {
+      "discipline": "Muay Thai",
+      "detail": "4 years of practice",
+      "stat": "",
+      "note": ""
+    },
+    {
+      "discipline": "Sprint",
+      "detail": "50m",
+      "stat": "6.12s",
+      "note": "TODO: add other performances and distances"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "role": "TODO: R&D Intern",
+    "org": "Hilti",
+    "url": "https://www.hilti.com",
+    "dates": "TODO: Month Year - Month Year",
+    "location": "TODO: City, Country",
+    "bullets": [
+      "TODO: Describe your main project or responsibility at Hilti (e.g. deployed edge AI pipeline for industrial sensing on i.MX8 using OpenVINO).",
+      "TODO: Key technical achievement or metric (e.g. reduced inference latency by X% while meeting power budget).",
+      "TODO: Tools, methods, or stack used beyond what is already in the title."
+    ]
+  },
+  {
+    "role": "TODO: Role (e.g. Research Intern)",
+    "org": "ISIR-CNRS",
+    "url": "https://www.isir.upmc.fr/",
+    "dates": "TODO: Month Year - Month Year",
+    "location": "Paris, France",
+    "bullets": [
+      "TODO: Describe your contribution at ISIR-CNRS (Institute of Intelligent Systems and Robotics).",
+      "TODO: Key technical outcome or publication / prototype produced."
+    ]
+  },
+  {
+    "role": "TODO: Role",
+    "org": "Aerotechnic",
+    "url": null,
+    "dates": "TODO: Month Year - Month Year",
+    "location": "TODO: City, Country",
+    "bullets": [
+      "TODO: Describe your role and main responsibilities.",
+      "TODO: Key project, achievement, or skill developed."
+    ]
+  },
+  {
+    "role": "TODO: Role (e.g. Project Manager / Consultant)",
+    "org": "Junior-Entreprise",
+    "url": null,
+    "dates": "TODO: Month Year - Month Year",
+    "location": "TODO: City, Country",
+    "bullets": [
+      "TODO: Describe your responsibilities (e.g. led client projects, managed a team of X engineers).",
+      "TODO: Notable project or outcome."
+    ]
+  }
+]

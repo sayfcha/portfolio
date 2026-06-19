@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Sayf Chafik | Robotics, Control &amp; AI</title>
+  <meta name="description" content="Sayf Chafik: final-year Master's student in Robotics, Control and AI at Sorbonne Universite / Arts et Metiers. Embedded ML, sensor fusion, edge AI deployment, and technical builder." />
+  <meta name="author" content="Sayf Chafik" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://sayfchafik.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sayfchafik.com/" />
+  <meta property="og:title" content="Sayf Chafik | Robotics, Control &amp; AI" />
+  <meta property="og:description" content="Final-year Master's student in Robotics, Control and AI. Embedded ML, sensor fusion, edge AI, and builder." />
+  <meta property="og:image" content="https://sayfchafik.com/assets/og-image.png" />
+  <!-- TODO: Create a 1200x630px og-image.png in /assets and update the URL above to your real domain. -->
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sayf Chafik | Robotics, Control &amp; AI" />
+  <meta name="twitter:description" content="Final-year Master's student in Robotics, Control and AI. Embedded ML, sensor fusion, edge AI, and builder." />
+  <meta name="twitter:image" content="https://sayfchafik.com/assets/og-image.png" />
+
+  <!-- Theme script: runs before render to prevent flash of wrong theme -->
+  <script>
+    (function () {
+      var stored = localStorage.getItem('theme');
+      var preferred = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', stored || preferred);
+    })();
+  </script>
+
+  <!-- Fonts: Inter (body) + JetBrains Mono (chips / labels) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Skip to main content (accessibility) -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <header class="nav-wrapper" role="banner">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="nav-logo" href="#hero" aria-label="Back to top">SC</a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#hackathons">Hackathons</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#academics">Academics</a></li>
+        <li><a href="#sport">Sport</a></li>
+        <li><a href="#writing">Notes</a></li>
+      </ul>
+
+      <button class="theme-toggle" aria-label="Toggle dark / light mode" title="Toggle dark / light mode">
+        <!-- Sun icon (shown in dark mode to switch to light) -->
+        <svg class="icon-sun" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+        <!-- Moon icon (shown in light mode to switch to dark) -->
+        <svg class="icon-moon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section id="hero" class="hero section-full" aria-labelledby="hero-name">
+      <div class="container">
+        <div class="hero-inner">
+
+          <div class="hero-text">
+            <p class="hero-label mono">Robotics · Embedded ML · Builder</p>
+            <h1 id="hero-name" class="hero-name">Sayf Chafik</h1>
+            <p class="hero-intro">
+              Final-year Master's student in Robotics, Control and AI at Sorbonne Universite / Arts et Metiers.
+              I build systems where perception, control, and intelligence meet physical hardware: from Kalman filters on microcontrollers to neural networks running on edge processors.
+              Looking for roles where engineering depth and product ambition both matter.
+            </p>
+            <nav class="hero-links" aria-label="Contact and social links">
+              <a href="https://github.com/sayfcha" target="_blank" rel="noopener noreferrer" class="hero-link" aria-label="GitHub profile (opens in new tab)">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.23 3.44 9.67 8.21 11.23.6.11.82-.26.82-.57 0-.28-.01-1.02-.01-2-.3.06-1.19.26-1.46.26-2.27 0-2.8-1.74-2.8-1.74-.38-.96-.92-1.22-.92-1.22-.75-.51.06-.5.06-.5.83.06 1.27.85 1.27.85.74 1.26 1.93.9 2.4.69.08-.53.29-.9.52-1.1-1.84-.21-3.77-.92-3.77-4.09 0-.9.33-1.64.85-2.22-.09-.21-.37-1.05.08-2.18 0 0 .69-.22 2.25.84A7.9 7.9 0 0 1 12 6.84c.7 0 1.4.09 2.06.27 1.56-1.06 2.25-.84 2.25-.84.45 1.13.17 1.97.08 2.18.53.58.85 1.32.85 2.22 0 3.18-1.94 3.88-3.79 4.08.3.26.56.77.56 1.55 0 1.12-.01 2.02-.01 2.29 0 .31.22.68.83.57C20.57 21.96 24 17.52 24 12.29 24 5.78 18.63.5 12 .5z"/>
+                </svg>
+                GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/sayf-chafik/" target="_blank" rel="noopener noreferrer" class="hero-link" aria-label="LinkedIn profile (opens in new tab)">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+                LinkedIn
+              </a>
+              <a href="mailto:sayfchafikpro@gmail.com" class="hero-link" aria-label="Send me an email">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                Email
+              </a>
+              <!-- TODO: Replace href with the actual path once you drop cv.pdf into /assets -->
+              <a href="assets/cv.pdf" download class="hero-link hero-link--accent" aria-label="Download CV as PDF">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="7 10 12 15 17 10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                Resume
+              </a>
+            </nav>
+          </div>
+
+          <div class="hero-avatar">
+            <!-- TODO: Place profile.jpg in /assets. If the file is missing, initials show instead. -->
+            <img
+              src="assets/profile.jpg"
+              alt="Photo of Sayf Chafik"
+              width="160"
+              height="160"
+              loading="eager"
+              id="hero-img"
+              onerror="this.style.display='none';document.getElementById('avatar-fallback').style.display='flex';"
+            />
+            <div class="avatar-fallback" id="avatar-fallback" aria-hidden="true">SC</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ABOUT
+    ============================================================ -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <p class="section-label mono">/ about</p>
+        <h2 id="about-heading" class="section-title">About</h2>
+        <div class="about-text">
+          <p>
+            My background spans mechanical design, electronics, embedded programming, and machine learning, with a focus on making algorithms work reliably on constrained hardware. I'm comfortable moving between simulation and the physical: debugging hardware in the lab in the morning, tuning an inference pipeline in the afternoon.
+          </p>
+          <p>
+            During my R&amp;D internship at Hilti, I worked on deploying edge AI models for industrial sensing applications using OpenVINO on an i.MX8 processor. That experience pushed me to think about models not just as accuracy numbers, but as systems with power budgets, latency constraints, and real-world failure modes. Getting something to run correctly on a chip is a different problem than getting it to run correctly in a notebook.
+          </p>
+          <p>
+            Beyond engineering, I care about what gets built and why. I follow the deep-tech startup space closely, particularly robotics, computer vision, and autonomous systems. I am looking for roles where I can contribute both at the technical and product level, whether at an early-stage company, an accelerator-backed venture, or an ambitious R&amp;D team.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SKILLS
+    ============================================================ -->
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <div class="container">
+        <p class="section-label mono">/ skills</p>
+        <h2 id="skills-heading" class="section-title">Technical Expertise</h2>
+        <div id="skills-grid" class="skills-grid" aria-label="Technical skills by category">
+          <!-- Populated by main.js from data/skills.json -->
+          <noscript>
+            <p>Enable JavaScript to view skills, or see <a href="data/skills.json">skills.json</a>.</p>
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROJECTS
+    ============================================================ -->
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <p class="section-label mono">/ projects</p>
+        <h2 id="projects-heading" class="section-title">Projects</h2>
+        <div id="projects-grid" class="projects-grid">
+          <!-- Populated by main.js from data/projects.json -->
+          <noscript>
+            <p>Enable JavaScript to view projects, or see <a href="data/projects.json">projects.json</a>.</p>
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         HACKATHONS
+    ============================================================ -->
+    <section id="hackathons" class="section" aria-labelledby="hackathons-heading">
+      <div class="container">
+        <p class="section-label mono">/ hackathons</p>
+        <h2 id="hackathons-heading" class="section-title">Hackathons</h2>
+        <ul id="hackathons-list" class="hackathons-list" aria-label="Hackathon participations">
+          <!-- Populated by main.js from data/hackathons.json -->
+          <noscript>
+            <p>Enable JavaScript to view hackathons, or see <a href="data/hackathons.json">hackathons.json</a>.</p>
+          </noscript>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EXPERIENCE
+    ============================================================ -->
+    <section id="experience" class="section" aria-labelledby="experience-heading">
+      <div class="container">
+        <p class="section-label mono">/ experience</p>
+        <h2 id="experience-heading" class="section-title">Experience</h2>
+        <ol id="experience-timeline" class="timeline" aria-label="Work experience timeline">
+          <!-- Populated by main.js from data/experience.json -->
+          <noscript>
+            <p>Enable JavaScript to view experience, or see <a href="data/experience.json">experience.json</a>.</p>
+          </noscript>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ACADEMICS
+    ============================================================ -->
+    <section id="academics" class="section" aria-labelledby="academics-heading">
+      <div class="container">
+        <p class="section-label mono">/ academics</p>
+        <h2 id="academics-heading" class="section-title">Coursework</h2>
+        <ul id="academics-list" class="academics-list" aria-label="Relevant coursework">
+          <!-- Populated by main.js from data/academics.json -->
+          <noscript>
+            <p>Enable JavaScript to view coursework, or see <a href="data/academics.json">academics.json</a>.</p>
+          </noscript>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SPORT
+    ============================================================ -->
+    <section id="sport" class="section" aria-labelledby="sport-heading">
+      <div class="container">
+        <p class="section-label mono">/ sport</p>
+        <h2 id="sport-heading" class="section-title">Athletics</h2>
+        <ul id="sport-list" class="sport-list" aria-label="Athletic achievements">
+          <!-- Populated by main.js from data/sport.json -->
+          <noscript>
+            <p>Enable JavaScript to view athletic achievements, or see <a href="data/sport.json">sport.json</a>.</p>
+          </noscript>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         WRITING / NOTES
+    ============================================================ -->
+    <section id="writing" class="section" aria-labelledby="writing-heading">
+      <div class="container">
+        <p class="section-label mono">/ notes</p>
+        <h2 id="writing-heading" class="section-title">Notes</h2>
+        <p class="writing-empty">
+          Writing coming soon. Short notes on robotics, edge ML, and the mechanics of building.
+        </p>
+        <!--
+          TODO: When you have posts, remove the paragraph above and add entries like this:
+
+          <ul class="writing-list">
+            <li class="writing-item">
+              <time datetime="YYYY-MM-DD" class="mono">YYYY-MM-DD</time>
+              <a href="notes/slug.html">Post title here</a>
+            </li>
+          </ul>
+        -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <span class="footer-name mono">Sayf Chafik</span>
+      <nav class="footer-links" aria-label="Social and contact links">
+        <a href="https://github.com/sayfcha" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/sayf-chafik/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:sayfchafikpro@gmail.com">sayfchafikpro@gmail.com</a>
+      </nav>
+      <p class="footer-copy">
+        <span aria-hidden="true">&copy;</span>
+        <span class="sr-only">Copyright</span>
+        <span id="year"></span> Sayf Chafik
+      </p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

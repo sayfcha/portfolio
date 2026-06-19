@@ -1,0 +1,39 @@
+[
+  {
+    "category": "Robotics",
+    "tags": ["ROS", "Kinematics", "Path Planning", "SLAM", "Mobile Robots", "Manipulators"]
+  },
+  {
+    "category": "State Estimation",
+    "tags": ["Kalman Filtering", "Extended Kalman Filter", "Particle Filters", "Sensor Fusion", "System Identification"]
+  },
+  {
+    "category": "Control",
+    "tags": ["PID", "LQR", "MPC", "Nonlinear Control", "Robust Control", "Feedback Linearization", "State Feedback"]
+  },
+  {
+    "category": "Embedded ML / Edge AI",
+    "tags": ["OpenVINO", "i.MX8", "Model Optimization", "Quantization", "Embedded Deployment"]
+  },
+  {
+    "category": "Machine Learning",
+    "tags": ["Deep Learning", "PyTorch", "TODO: TensorFlow?", "CNNs", "Classical ML"]
+  },
+  {
+    "category": "Perception / Computer Vision",
+    "tags": ["OpenCV", "Feature Extraction", "3D Scene Understanding", "TODO: Point Clouds?"]
+  },
+  {
+    "category": "Programming",
+    "tags": ["Python", "C/C++", "MATLAB", "JavaScript"]
+  },
+
+  {
+    "category": "CAD / Design",
+    "tags": ["SolidWorks", "Fusion 360", "3D Printing", "FEA"]
+  },
+  {
+    "category": "Tooling",
+    "tags": ["Git", "Linux", "TODO: Docker?", "TODO: CI/CD?"]
+  }
+]
