@@ -57,10 +57,10 @@
 
       <nav class="header-nav" id="main-nav" aria-label="Primary navigation">
         <a class="bracket-link" href="#about">About</a>
-        <a class="bracket-link" href="#skills">Skills</a>
-        <a class="bracket-link" href="#projects">Projects</a>
-        <a class="bracket-link" href="#hackathons">Hackathons</a>
         <a class="bracket-link" href="#experience">Experience</a>
+        <a class="bracket-link" href="#projects">Projects</a>
+        <a class="bracket-link" href="#skills">Skills</a>
+        <a class="bracket-link" href="#hackathons">Hackathons</a>
         <a class="bracket-link" href="academics.html">Coursework</a>
         <a class="bracket-link" href="#sport">Sport</a>
         <a class="bracket-link" href="#writing">Notes</a>
@@ -133,16 +133,19 @@
     </section>
 
     <!-- ═══════════════════════════════════════════════════════
-         SKILLS
+         EXPERIENCE
     ═══════════════════════════════════════════════════════ -->
-    <section id="skills" class="section" aria-labelledby="skills-heading">
+    <section id="experience" class="section" aria-labelledby="experience-heading">
       <div class="container">
         <div class="s-head">
           <span class="s-head-sq" aria-hidden="true"></span>
-          <span class="s-head-label" id="skills-heading">Skills // Expertise</span>
+          <span class="s-head-label" id="experience-heading">Experience</span>
         </div>
-        <div id="skills-groups" class="skills-groups" aria-label="Technical skills by category">
-          <!-- Rendered by main.js from data/skills.json -->
+        <div class="timeline-wrap">
+          <div class="timeline-center" aria-hidden="true"></div>
+          <ol class="timeline-list" id="experience-timeline" aria-label="Work experience">
+            <!-- Rendered by main.js from data/experience.json -->
+          </ol>
         </div>
       </div>
     </section>
@@ -164,6 +167,21 @@
           <div class="projects-scroll" id="projects-scroll">
             <!-- Rendered by main.js from data/projects.json -->
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SKILLS
+    ═══════════════════════════════════════════════════════ -->
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="s-head">
+          <span class="s-head-sq" aria-hidden="true"></span>
+          <span class="s-head-label" id="skills-heading">Skills // Expertise</span>
+        </div>
+        <div id="skills-groups" class="skills-groups" aria-label="Technical skills by category">
+          <!-- Rendered by main.js from data/skills.json -->
         </div>
       </div>
     </section>
@@ -191,24 +209,6 @@
               <!-- Rendered by main.js from data/hackathons.json -->
             </tbody>
           </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════════════════
-         EXPERIENCE
-    ═══════════════════════════════════════════════════════ -->
-    <section id="experience" class="section" aria-labelledby="experience-heading">
-      <div class="container">
-        <div class="s-head">
-          <span class="s-head-sq" aria-hidden="true"></span>
-          <span class="s-head-label" id="experience-heading">Experience</span>
-        </div>
-        <div class="timeline-wrap">
-          <div class="timeline-center" aria-hidden="true"></div>
-          <ol class="timeline-list" id="experience-timeline" aria-label="Work experience">
-            <!-- Rendered by main.js from data/experience.json -->
-          </ol>
         </div>
       </div>
     </section>
