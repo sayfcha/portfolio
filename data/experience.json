@@ -1,33 +1,32 @@
 [
   {
-    "role": "Localization R&D Intern",
+    "role": "Localization R&D",
     "org": "Hilti Group",
     "url": "https://www.hilti.com",
-    "dates": "Feb 2026 - Present",
+    "dates": "2026",
     "location": "",
     "bullets": [
       "State estimation (Kalman filtering) and machine learning for an intelligent Robotic Total Station."
     ]
   },
   {
-    "role": "Research Intern",
+    "role": "Research",
     "org": "ISIR - Institut des Systèmes Intelligents et de Robotique",
     "url": "https://www.isir.upmc.fr/",
-    "dates": "2025 - 2025",
-    "location": "Paris, Île-de-France, France",
+    "dates": "2025",
+    "location": "Paris, France",
     "bullets": [
       "Developed and deployed advanced control strategies for a haptic system at ISIR, focusing on high-fidelity tactile feedback. By integrating complex dynamic modeling and virtual coupling, I optimized the stability and precision of robotic grasping and manipulation."
     ]
   },
   {
-    "role": "TODO: Role",
-    "org": "Aerotechnic",
+    "role": "Data Scientist",
+    "org": "Aerotechnic Industries",
     "url": null,
-    "dates": "TODO: Month Year - Month Year",
-    "location": "TODO: City, Country",
+    "dates": "2024",
+    "location": "",
     "bullets": [
-      "TODO: Describe your role and main responsibilities.",
-      "TODO: Key project, achievement, or skill developed."
+      "Developed a Python predictive-maintenance tool on sensor time-series data, integrating supervised ML models (Random Forest, SVM) for anomaly detection — automating analyses that were previously manual."
     ]
   },
   {
