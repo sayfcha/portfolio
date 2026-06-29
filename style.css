@@ -258,6 +258,10 @@ button {
   padding-bottom: var(--sp-xl);
 }
 
+.section-page {
+  padding-top: calc(var(--nav-h) + var(--sp-xl));
+}
+
 .section-label {
   font-size: 0.75rem;
   letter-spacing: 0.08em;
