@@ -128,15 +128,6 @@
                 </svg>
                 Email
               </a>
-              <!-- TODO: Replace href with the actual path once you drop cv.pdf into /assets -->
-              <a href="assets/cv.pdf" download class="hero-link hero-link--accent" aria-label="Download CV as PDF">
-                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                  <polyline points="7 10 12 15 17 10"/>
-                  <line x1="12" y1="15" x2="12" y2="3"/>
-                </svg>
-                Resume
-              </a>
             </nav>
           </div>
 
@@ -202,12 +193,12 @@
       <div class="container">
         <p class="section-label mono">/ projects</p>
         <h2 id="projects-heading" class="section-title">Projects</h2>
-        <div id="projects-grid" class="projects-grid">
+        <ul id="projects-list" class="projects-list" aria-label="Projects">
           <!-- Populated by main.js from data/projects.json -->
           <noscript>
             <p>Enable JavaScript to view projects, or see <a href="data/projects.json">projects.json</a>.</p>
           </noscript>
-        </div>
+        </ul>
       </div>
     </section>
 

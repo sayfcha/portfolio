@@ -150,45 +150,32 @@ function isTodo(str) {
 }
 
 function renderProjects(data) {
-  const grid = document.getElementById('projects-grid');
-  if (!data || !grid) return;
+  const list = document.getElementById('projects-list');
+  if (!data || !list) return;
 
-  grid.innerHTML = data.map(p => {
+  list.innerHTML = data.map(p => {
     const hasRepo = p.repo && !isTodo(p.repo);
     const hasDemo = p.demo && !isTodo(p.demo);
-    const hasLinks = hasRepo || hasDemo;
 
     return `
-      <article class="project-card" id="${esc(p.id)}">
-        <h3 class="project-title">${esc(p.title)}</h3>
-        <p class="project-summary">${esc(p.summary)}</p>
-        <div class="project-stack">
-          ${p.stack.map(t => `<span class="chip">${esc(t)}</span>`).join('')}
-        </div>
-        <div class="project-psr">
-          <div class="psr-row">
-            <p class="psr-label">Problem</p>
-            <p class="psr-text">${esc(p.problem)}</p>
-          </div>
-          <div class="psr-row">
-            <p class="psr-label">Solution</p>
-            <p class="psr-text">${esc(p.solution)}</p>
-          </div>
-          <div class="psr-row">
-            <p class="psr-label">Result</p>
-            <p class="psr-text">${esc(p.result)}</p>
+      <li class="project-row" id="${esc(p.id)}">
+        <div class="project-row-top">
+          <h3 class="project-row-name">${esc(p.title)}</h3>
+          <div class="project-row-links">
+            ${hasRepo ? `<a href="${esc(p.repo)}" target="_blank" rel="noopener noreferrer" class="project-ext-link" aria-label="Source code for ${esc(p.title)}">${iconGitHub}</a>` : ''}
+            ${hasDemo ? `<a href="${esc(p.demo)}" target="_blank" rel="noopener noreferrer" class="project-ext-link" aria-label="Live demo for ${esc(p.title)}">${iconExternal}</a>` : ''}
           </div>
         </div>
-        ${hasLinks ? `
-        <div class="project-links">
-          ${hasRepo ? `<a href="${esc(p.repo)}" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Source code for ${esc(p.title)}">${iconGitHub} Source</a>` : ''}
-          ${hasDemo ? `<a href="${esc(p.demo)}" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Live demo for ${esc(p.title)}">${iconExternal} Demo</a>` : ''}
+        ${!isTodo(p.summary) ? `<p class="project-row-summary">${esc(p.summary)}</p>` : ''}
+        ${p.stack && p.stack.some(t => !isTodo(t)) ? `
+        <div class="project-row-stack">
+          ${p.stack.filter(t => !isTodo(t)).map(t => `<span class="chip">${esc(t)}</span>`).join('')}
         </div>` : ''}
-      </article>
+      </li>
     `;
   }).join('');
 
-  grid.querySelectorAll('.project-card').forEach(watch);
+  list.querySelectorAll('.project-row').forEach(watch);
 }
 
 
