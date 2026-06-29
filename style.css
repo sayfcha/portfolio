@@ -327,6 +327,29 @@ table { border-collapse: collapse; }
   gap: 0.4rem;
 }
 
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+.hero-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.8rem;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  transition: background var(--transition), color var(--transition);
+}
+.hero-link svg { flex-shrink: 0; width: 14px; height: 14px; }
+.hero-link:hover { background: var(--ink); color: var(--paper); }
+
 /* Portrait */
 .hero-avatar-wrap {
   position: relative;
