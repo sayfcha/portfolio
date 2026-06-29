@@ -1,25 +1,22 @@
 [
   {
-    "role": "TODO: R&D Intern",
-    "org": "Hilti",
+    "role": "Localization R&D Intern",
+    "org": "Hilti Group",
     "url": "https://www.hilti.com",
-    "dates": "TODO: Month Year - Month Year",
-    "location": "TODO: City, Country",
+    "dates": "Feb 2026 - Present",
+    "location": "",
     "bullets": [
-      "TODO: Describe your main project or responsibility at Hilti (e.g. deployed edge AI pipeline for industrial sensing on i.MX8 using OpenVINO).",
-      "TODO: Key technical achievement or metric (e.g. reduced inference latency by X% while meeting power budget).",
-      "TODO: Tools, methods, or stack used beyond what is already in the title."
+      "State estimation (Kalman filtering) and machine learning for an intelligent Robotic Total Station."
     ]
   },
   {
-    "role": "TODO: Role (e.g. Research Intern)",
-    "org": "ISIR-CNRS",
+    "role": "Research Intern",
+    "org": "ISIR - Institut des Systèmes Intelligents et de Robotique",
     "url": "https://www.isir.upmc.fr/",
-    "dates": "TODO: Month Year - Month Year",
-    "location": "Paris, France",
+    "dates": "2025 - 2025",
+    "location": "Paris, Île-de-France, France",
     "bullets": [
-      "TODO: Describe your contribution at ISIR-CNRS (Institute of Intelligent Systems and Robotics).",
-      "TODO: Key technical outcome or publication / prototype produced."
+      "Developed and deployed advanced control strategies for a haptic system at ISIR, focusing on high-fidelity tactile feedback. By integrating complex dynamic modeling and virtual coupling, I optimized the stability and precision of robotic grasping and manipulation."
     ]
   },
   {
