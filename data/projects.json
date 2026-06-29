@@ -1,10 +1,10 @@
 [
   {
     "id": "project-mpc-manipulator",
-    "year": "2024",
+    "year": "2025",
     "title": "MPC of a Mobile Manipulator",
     "summary": "Model predictive control driving a mobile manipulator to a target end-effector pose with real-time obstacle avoidance.",
-    "stack": ["MPC", "MATLAB", "Constrained Optimization", "Kinematics"],
+    "stack": ["MPC", "Python", "MATLAB", "Constrained Optimization", "Kinematics"],
     "problem": "Drive a mobile manipulator to a target end-effector configuration while respecting actuation limits and avoiding a circular obstacle — a non-convex, constrained trajectory problem.",
     "solution": "At each timestep, a finite-horizon optimization problem is solved over the system's kinematic and dynamic model. The obstacle is encoded as an inequality constraint, keeping the planned trajectory feasible and collision-free throughout the horizon.",
     "result": "Controller successfully reaches goal configurations while satisfying all constraints. Demonstrated robustness to varying obstacle positions and different initial configurations.",
@@ -12,11 +12,23 @@
     "demo": null
   },
   {
+    "id": "project-hinf-suspension",
+    "year": "2025",
+    "title": "H-infinity Control of an Active Suspension",
+    "summary": "Robust H-infinity controller for a quarter-car active suspension, optimizing the trade-off between road holding and passenger comfort.",
+    "stack": ["MATLAB", "Robust Control", "H-infinity Synthesis", "Frequency-Domain Analysis"],
+    "problem": "Road holding and passenger comfort are competing objectives: stiffening the suspension improves contact but worsens ride quality. The challenge is to find the best achievable trade-off under model uncertainty.",
+    "solution": "Performance objectives are formalized as weighted sensitivity functions. The H-infinity synthesis problem is then solved to find a controller that minimizes the worst-case weighted output energy, with robustness to model uncertainty built in by construction.",
+    "result": "Controller validated in simulation against road-disturbance profiles. Analysis confirms the closed-loop trade-off and robustness margins, outperforming a passive suspension baseline on both metrics.",
+    "repo": null,
+    "demo": null
+  },
+  {
     "id": "project-fader-networks",
-    "year": "2024",
+    "year": "2025",
     "title": "Fader Networks: Controllable Image Attribute Editing",
     "summary": "PyTorch reimplementation of Fader Networks (Lample et al., NeurIPS 2017) for continuous, identity-preserving image attribute editing.",
-    "stack": ["PyTorch", "Deep Learning", "Adversarial Training", "CelebA"],
+    "stack": ["PyTorch", "Python", "Deep Learning", "Adversarial Training", "CelebA"],
     "problem": "Learn a latent representation that is invariant to chosen attributes (smile, gender, glasses) so that attribute values can be slid continuously at inference without altering identity.",
     "solution": "Encoder-decoder with latent adversarial training: a discriminator tries to predict the attribute from the encoding, while the encoder learns to fool it, decorrelating attribute information from identity. At inference, attributes are injected into the decoder to produce realistic edits.",
     "result": "Reproduced the paper's qualitative results on CelebA. Attribute edits are smooth and identity-preserving across the full slider range. Ablations on adversarial weight confirmed the decorrelation mechanism.",
@@ -25,7 +37,7 @@
   },
   {
     "id": "project-drone-attitude",
-    "year": "2024",
+    "year": "2025",
     "title": "Attitude Estimation and Control for a Drone",
     "summary": "Quaternion-based attitude estimation and closed-loop control for a drone, comparing a linear and a nonlinear estimator.",
     "stack": ["Python", "MATLAB", "Quaternions", "State Estimation", "Control"],
@@ -37,7 +49,7 @@
   },
   {
     "id": "project-autonomous-vehicle",
-    "year": "2024",
+    "year": "2025",
     "title": "Autonomous Vehicle Navigation with ROS2",
     "summary": "Full autonomy stack for a ground vehicle: line following, LIDAR-based obstacle avoidance, corridor navigation, and goal-scoring, all running in ROS2.",
     "stack": ["ROS2", "Python", "LIDAR", "Computer Vision", "OpenCV"],
