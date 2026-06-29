@@ -1,25 +1,14 @@
 {
-  "_schema": "Each entry: name (hackathon name), organizer (company or school running it), date (Month Year), location (City, Country or Online), rank (placement or award, e.g. '1st place', 'Finalist', 'Best Hardware Hack'), what (one sentence: what you built), stack (array of tech tags), link (URL to project or devpost, or null).",
+  "_schema": "Each entry: name (hackathon name), organizer (company or school running it), date (Month Year), location (City, Country or Online), what (one sentence: what you built), stack (array of tech tags), link (URL to project or devpost, or null).",
 
   "entries": [
     {
-      "name": "TODO: Hackathon Name",
-      "organizer": "TODO: Organizer",
-      "date": "TODO: Month Year",
-      "location": "TODO: City, Country",
-      "rank": "TODO: 1st place / Finalist / Best X Hack",
-      "what": "TODO: One sentence describing what you built and what problem it solved.",
-      "stack": ["TODO", "Tech", "Stack"],
-      "link": null
-    },
-    {
-      "name": "TODO: Hackathon Name",
-      "organizer": "TODO: Organizer",
-      "date": "TODO: Month Year",
-      "location": "TODO: City, Country",
-      "rank": "TODO: Placement or award",
-      "what": "TODO: What you built.",
-      "stack": ["TODO", "Tech", "Stack"],
+      "name": "SIX Hackathon",
+      "organizer": "SIX Group",
+      "date": "2025",
+      "location": "Zurich, Switzerland",
+      "what": "Built RELAY (Jacob) in 48h: an AI assistant that records an employee's screen, uses a VLM to reconstruct their workflows frame by frame, and compiles the output into a living knowledge handbook that powers a role-agnostic onboarding chatbot.",
+      "stack": ["Electron", "SQLite", "Vision-Language Model", "LLM", "RAG", "Markdown"],
       "link": null
     }
   ]

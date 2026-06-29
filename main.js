@@ -195,7 +195,6 @@ function renderHackathons(data) {
       <td class="hack-ref">HACK-${String(i + 1).padStart(2, '0')}</td>
       <td class="hack-venue">${esc(h.name)}</td>
       <td class="hack-year">${!isTodo(h.date) ? esc(h.date) : '<span style="color:var(--muted)">—</span>'}</td>
-      <td class="hack-result">${!isTodo(h.rank) ? `<span class="chip">${esc(h.rank)}</span>` : '<span style="color:var(--muted)">—</span>'}</td>
       <td class="hack-desc">${!isTodo(h.what) ? esc(h.what) : '<span style="color:var(--muted)">TODO</span>'}</td>
     </tr>
   `).join('');
