@@ -458,10 +458,10 @@ table { border-collapse: collapse; }
    PROJECTS (stacked cards, clickable)
    ============================================================ */
 .projects-list {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  max-width: 620px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 1.5rem;
+  max-width: 1024px;
 }
 
 .project-card {
@@ -501,24 +501,24 @@ a.project-card:hover .project-card-media { border-color: var(--ink); }
 a.project-card:hover .project-card-img { transform: scale(1.03); }
 
 .project-card-body {
-  padding-top: 1.25rem;
+  padding-top: 0.9rem;
 }
 
 .project-card-head {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.6rem;
 }
 
 .project-card-title {
   display: inline-flex;
   align-items: center;
-  gap: 0.55rem;
+  gap: 0.45rem;
   font-family: var(--serif);
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  line-height: 1.25;
+  line-height: 1.3;
   color: var(--ink);
 }
 .project-card-linkicon {
@@ -546,11 +546,10 @@ a.project-card:hover .project-card-linkicon { color: var(--accent); }
 
 .project-card-summary {
   font-family: var(--mono);
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   color: var(--ink-body);
-  line-height: 1.7;
-  margin-top: 0.9rem;
-  max-width: 60ch;
+  line-height: 1.65;
+  margin-top: 0.6rem;
 }
 
 
@@ -863,6 +862,8 @@ a.timeline-org:hover { color: var(--accent); }
   .hero-grid { grid-template-columns: 1fr; gap: 3rem; }
   .hero-avatar-wrap, .hero-avatar-img, .hero-portrait-fallback { width: 140px; height: 140px; }
 
+  .projects-list { grid-template-columns: repeat(2, 1fr); }
+
   /* Timeline: single left rail */
   .timeline-center { left: 0; transform: none; }
   .timeline-item,
@@ -892,6 +893,8 @@ a.timeline-org:hover { color: var(--accent); }
    ============================================================ */
 @media (max-width: 560px) {
   :root { --gutter: 1.25rem; --section-gap: 3.5rem; }
+
+  .projects-list { grid-template-columns: 1fr; }
 
   /* Hamburger nav */
   .nav-toggle { display: flex; margin-left: auto; }
