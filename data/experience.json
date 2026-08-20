@@ -28,16 +28,5 @@
     "bullets": [
       "Developed a Python predictive-maintenance tool on sensor time-series data, integrating supervised ML models (Random Forest, SVM) for anomaly detection — automating analyses that were previously manual."
     ]
-  },
-  {
-    "role": "TODO: Role (e.g. Project Manager / Consultant)",
-    "org": "Junior-Entreprise",
-    "url": null,
-    "dates": "TODO: Month Year - Month Year",
-    "location": "TODO: City, Country",
-    "bullets": [
-      "TODO: Describe your responsibilities (e.g. led client projects, managed a team of X engineers).",
-      "TODO: Notable project or outcome."
-    ]
   }
 ]
