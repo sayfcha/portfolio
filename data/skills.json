@@ -17,7 +17,7 @@
   },
   {
     "category": "Machine Learning",
-    "tags": ["Deep Learning", "PyTorch", "TODO: TensorFlow?", "CNNs", "Classical ML"]
+    "tags": ["Deep Learning", "PyTorch", "TensorFlow", "CNNs", "Classical ML"]
   },
   {
     "category": "Perception / Computer Vision",
