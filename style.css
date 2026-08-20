@@ -275,7 +275,7 @@ table { border-collapse: collapse; }
    ============================================================ */
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr 180px;
+  grid-template-columns: 1fr;
   gap: 4rem;
   align-items: start;
 }
@@ -472,7 +472,7 @@ table { border-collapse: collapse; }
 .project-card-media {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 2 / 1;
   overflow: hidden;
   border: 1px solid var(--border);
   background: var(--paper-header);
