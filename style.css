@@ -455,104 +455,102 @@ table { border-collapse: collapse; }
 
 
 /* ============================================================
-   PROJECTS (horizontal scroll)
+   PROJECTS (stacked cards, clickable)
    ============================================================ */
-.projects-controls {
+.projects-list {
   display: flex;
-  justify-content: flex-end;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.scroll-btn {
-  font-family: var(--mono);
-  font-size: 1rem;
-  line-height: 1;
-  color: var(--muted);
-  border: 1px solid var(--border);
-  width: 2rem;
-  height: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: color var(--transition), border-color var(--transition);
-}
-.scroll-btn:hover { color: var(--ink); border-color: var(--ink); }
-
-.projects-scroll-wrap {
-  overflow-x: auto;
-  scrollbar-width: thin;
-  scrollbar-color: var(--border) transparent;
-  padding-bottom: 0.75rem;
-}
-.projects-scroll-wrap::-webkit-scrollbar { height: 3px; }
-.projects-scroll-wrap::-webkit-scrollbar-thumb { background: var(--border); }
-
-.projects-scroll {
-  display: flex;
-  gap: 0;
-  width: max-content;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .project-card {
-  width: 300px;
-  flex-shrink: 0;
-  border: 1px solid var(--border);
-  border-right: none;
-  padding: 1.75rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
-.project-card:last-child { border-right: 1px solid var(--border); }
-.project-card:hover { border-color: var(--ink); }
 
-.project-card-year {
-  font-family: var(--mono);
-  font-size: 0.68rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+.project-card-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--paper-header);
+  transition: border-color var(--transition);
+}
+.project-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 300ms ease;
+}
+.project-card-media-fallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--serif);
+  font-size: 4rem;
+  font-style: italic;
   color: var(--muted);
+}
+a.project-card:hover .project-card-media { border-color: var(--ink); }
+a.project-card:hover .project-card-img { transform: scale(1.03); }
+
+.project-card-body {
+  padding-top: 1.25rem;
+}
+
+.project-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .project-card-title {
-  font-family: var(--mono);
-  font-size: 0.9rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.25;
   color: var(--ink);
-  line-height: 1.35;
+}
+.project-card-linkicon {
+  flex-shrink: 0;
+  color: var(--muted);
+  transition: color var(--transition);
+}
+a.project-card:hover .project-card-linkicon { color: var(--accent); }
+
+.project-card-badge {
+  flex-shrink: 0;
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--badge-bg);
+  border: 1px solid var(--border-blue);
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  margin-top: 0.35rem;
 }
 
 .project-card-summary {
   font-family: var(--mono);
-  font-size: 0.83rem;
+  font-size: 0.85rem;
   color: var(--ink-body);
-  line-height: 1.65;
-  flex: 1;
+  line-height: 1.7;
+  margin-top: 0.9rem;
+  max-width: 60ch;
 }
-
-.project-card-divider { height: 1px; background: var(--border); }
-
-.project-card-stack { display: flex; flex-wrap: wrap; gap: 0.3rem; }
-
-.project-card-links {
-  display: flex;
-  gap: 1rem;
-  padding-top: 0.25rem;
-}
-.project-card-link {
-  font-family: var(--mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--muted);
-  transition: color var(--transition);
-}
-.project-card-link::before { content: '['; margin-right: 0.1em; }
-.project-card-link::after  { content: ']'; margin-left:  0.1em; }
-.project-card-link:hover { color: var(--accent); }
 
 
 /* ============================================================

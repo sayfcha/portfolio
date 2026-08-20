@@ -141,43 +141,43 @@ function renderSkills(data) {
    RENDER: PROJECTS (horizontal scroll cards)
    ============================================================ */
 function renderProjects(data) {
-  const scroll = document.getElementById('projects-scroll');
-  const wrap   = document.getElementById('projects-scroll-wrap');
-  if (!data || !scroll) return;
+  const list = document.getElementById('projects-list');
+  if (!data || !list) return;
 
-  scroll.innerHTML = data.map(p => {
-    const hasRepo = p.repo && !isTodo(p.repo);
-    const hasDemo = p.demo && !isTodo(p.demo);
-    const hasLinks = hasRepo || hasDemo;
-    const hasStack = p.stack && p.stack.some(t => !isTodo(t));
+  list.innerHTML = data.map(p => {
+    const link = (p.repo && !isTodo(p.repo)) ? p.repo
+               : (p.demo && !isTodo(p.demo)) ? p.demo
+               : null;
+    const hasImg = p.image && !isTodo(p.image);
+    const initials = esc((p.title || '?').trim().charAt(0).toUpperCase());
+    const tag = document.createElement(link ? 'a' : 'div');
+    tag.className = 'project-card';
+    tag.id = esc(p.id);
+    if (link) {
+      tag.setAttribute('href', esc(link));
+      tag.setAttribute('target', '_blank');
+      tag.setAttribute('rel', 'noopener noreferrer');
+    }
 
-    return `
-      <div class="project-card" id="${esc(p.id)}">
-        ${p.year ? `<p class="project-card-year">${esc(p.year)}</p>` : ''}
-        <h3 class="project-card-title">${esc(p.title)}</h3>
+    tag.innerHTML = `
+      <div class="project-card-media">
+        ${hasImg ? `<img class="project-card-img" src="${esc(p.image)}" alt="${esc(p.title)}" loading="lazy"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />` : ''}
+        <div class="project-card-media-fallback" ${hasImg ? 'style="display:none"' : ''} aria-hidden="true">${initials}</div>
+      </div>
+      <div class="project-card-body">
+        <div class="project-card-head">
+          <h3 class="project-card-title">
+            ${esc(p.title)}
+            ${link ? `<svg class="project-card-linkicon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>` : ''}
+          </h3>
+          ${p.category && !isTodo(p.category) ? `<span class="project-card-badge">${esc(p.category)}</span>` : ''}
+        </div>
         ${!isTodo(p.summary) ? `<p class="project-card-summary">${esc(p.summary)}</p>` : ''}
-        <div class="project-card-divider"></div>
-        ${hasStack ? `
-        <div class="project-card-stack">
-          ${p.stack.filter(t => !isTodo(t)).map(t => `<span class="chip">${esc(t)}</span>`).join('')}
-        </div>` : ''}
-        ${hasLinks ? `
-        <div class="project-card-links">
-          ${hasRepo ? `<a href="${esc(p.repo)}" target="_blank" rel="noopener noreferrer" class="project-card-link" aria-label="Source code">Source</a>` : ''}
-          ${hasDemo ? `<a href="${esc(p.demo)}" target="_blank" rel="noopener noreferrer" class="project-card-link" aria-label="Live demo">Demo</a>` : ''}
-        </div>` : ''}
       </div>
     `;
+    return tag.outerHTML;
   }).join('');
-
-  if (wrap) {
-    document.getElementById('proj-prev')?.addEventListener('click', () => {
-      wrap.scrollBy({ left: -320, behavior: 'smooth' });
-    });
-    document.getElementById('proj-next')?.addEventListener('click', () => {
-      wrap.scrollBy({ left: 320, behavior: 'smooth' });
-    });
-  }
 }
 
 

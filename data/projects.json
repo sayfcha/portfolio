@@ -2,6 +2,8 @@
   {
     "id": "project-mpc-manipulator",
     "year": "2025",
+    "category": "CONTROL",
+    "image": "assets/projects/mpc-manipulator.png",
     "title": "MPC of a Mobile Manipulator",
     "summary": "Model predictive control driving a mobile manipulator to a target end-effector pose with real-time obstacle avoidance.",
     "stack": ["MPC", "Python", "MATLAB", "Constrained Optimization", "Kinematics"],
@@ -14,6 +16,8 @@
   {
     "id": "project-autonomous-vehicle",
     "year": "2025",
+    "category": "ROBOTICS",
+    "image": "assets/projects/autonomous-vehicle.png",
     "title": "Autonomous Vehicle Navigation with ROS2",
     "summary": "Full autonomy stack for a ground vehicle: line following, LIDAR-based obstacle avoidance, corridor navigation, and goal-scoring, all running in ROS2.",
     "stack": ["ROS2", "Python", "LIDAR", "Computer Vision", "OpenCV"],
@@ -26,6 +30,8 @@
   {
     "id": "project-fader-networks",
     "year": "2025",
+    "category": "ML",
+    "image": "assets/projects/fader-networks.png",
     "title": "Fader Networks: Controllable Image Attribute Editing",
     "summary": "PyTorch reimplementation of Fader Networks (Lample et al., NeurIPS 2017) for continuous, identity-preserving image attribute editing.",
     "stack": ["PyTorch", "Python", "Deep Learning", "Adversarial Training", "CelebA"],
@@ -38,6 +44,8 @@
   {
     "id": "project-hinf-suspension",
     "year": "2025",
+    "category": "CONTROL",
+    "image": "assets/projects/hinf-suspension.png",
     "title": "H-infinity Control of an Active Suspension",
     "summary": "Robust H-infinity controller for a quarter-car active suspension, optimizing the trade-off between road holding and passenger comfort.",
     "stack": ["MATLAB", "Robust Control", "H-infinity Synthesis", "Frequency-Domain Analysis"],
@@ -50,6 +58,8 @@
   {
     "id": "project-drone-attitude",
     "year": "2025",
+    "category": "ROBOTICS",
+    "image": "assets/projects/drone-attitude.png",
     "title": "Attitude Estimation and Control for a Drone",
     "summary": "Quaternion-based attitude estimation and closed-loop control for a drone, comparing a linear and a nonlinear estimator.",
     "stack": ["Python", "MATLAB", "Quaternions", "State Estimation", "Control"],
