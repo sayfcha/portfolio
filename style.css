@@ -461,6 +461,7 @@ table { border-collapse: collapse; }
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  max-width: 620px;
 }
 
 .project-card {
