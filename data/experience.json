@@ -6,7 +6,7 @@
     "dates": "2026",
     "location": "",
     "bullets": [
-      "State estimation (Kalman filtering) and machine learning for an intelligent Robotic Total Station."
+      "Focused on state estimation and perception for Hilti's robotic total station (PLT), with an emphasis on target tracking and visual detection. My work involved digital twin simulation, motion estimation and Kalman filtering, as well as deep-learning-based object detection, contributing to the improvement of tracking and perception performance."
     ]
   },
   {
