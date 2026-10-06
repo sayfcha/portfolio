@@ -96,5 +96,33 @@
     "result": "Versus the reference configuration, TensorRT plus INT4 quantization cut GPU memory by 62% and P95 latency by 47% while retaining 97.5% of baseline downstream performance — a favorable trade-off for deploying multimodal models in robotics.",
     "repo": null,
     "demo": null
+  },
+  {
+    "id": "project-whole-body-control",
+    "year": "2025",
+    "category": "CONTROL",
+    "image": "assets/projects/whole-body-control.jpeg",
+    "title": "Real-Time Whole-Body Control for Humanoid Robots",
+    "summary": "A floating-base inverse-dynamics whole-body controller with multi-contact constraints — >95% stabilization success across 100 randomized scenarios, <3 cm CoM RMSE and >200 Hz closed-loop control without significant contact-constraint violations.",
+    "stack": ["C++", "Pinocchio", "MuJoCo", "Eigen", "ProxQP/OSQP", "CMake"],
+    "problem": "Humanoid balance and manipulation require coordinating many tasks (CoM, pelvis, feet, hands) at once while respecting full rigid-body dynamics, torque limits, contacts and friction cones — all in real time.",
+    "solution": "A floating-base whole-body controller formulates inverse dynamics as a constrained quadratic program, jointly tracking CoM, pelvis, foot and end-effector tasks while enforcing rigid-body dynamics, torque limits, contact constraints and friction cones. Multi-contact control, contact switching and disturbance recovery are implemented and benchmarked in MuJoCo.",
+    "result": ">95% stabilization success across 100 randomized scenarios, <3 cm CoM tracking RMSE, and >200 Hz closed-loop control without significant contact-constraint violations.",
+    "repo": null,
+    "demo": null
+  },
+  {
+    "id": "project-contact-aware-nmpc",
+    "year": "2025",
+    "category": "CONTROL",
+    "image": "assets/projects/contact-aware-nmpc.jpeg",
+    "title": "Contact-Aware NMPC & State Estimation for Humanoid Locomotion",
+    "summary": "A centroidal NMPC locomotion planner paired with a floating-base EKF — 90% locomotion success at ≥50 Hz, with <20 ms median solve time, <2° orientation RMSE and <0.15 m/s base-velocity RMSE under noisy sensor conditions.",
+    "stack": ["C++", "Python", "CasADi/acados", "Pinocchio", "Eigen", "MuJoCo", "EKF"],
+    "problem": "Humanoid locomotion needs a planner that respects contact and friction feasibility while an estimator reconstructs the floating-base state from noisy sensors — both fast enough to run online.",
+    "solution": "A centroidal NMPC planner optimizes CoM motion, centroidal momentum and ground-reaction forces under contact, friction and feasibility constraints, feeding real-time references to a whole-body controller. A floating-base EKF fuses IMU, joint encoders and foot-contact information; locomotion is evaluated under sensor noise, model uncertainty and external disturbances.",
+    "result": "90% locomotion success at >=50 Hz, with <20 ms median solve time, <2 deg orientation RMSE and <0.15 m/s base-velocity RMSE under noisy sensor conditions.",
+    "repo": null,
+    "demo": null
   }
 ]
