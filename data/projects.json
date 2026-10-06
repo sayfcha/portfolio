@@ -68,5 +68,33 @@
     "result": "The nonlinear estimator outperforms the linear baseline at large angles where gimbal lock would otherwise cause instability. Analysis quantified accuracy, convergence speed, and computational overhead of each formulation.",
     "repo": null,
     "demo": null
+  },
+  {
+    "id": "project-embodied-vlm",
+    "year": "2025",
+    "category": "ROBOTICS",
+    "image": "assets/projects/embodied-vlm.jpeg",
+    "title": "Embodied VLM Agent for Robotic Manipulation",
+    "summary": "A multimodal robotic agent combining a vision-language model, hierarchical planning, episodic memory, and symbolic constraints to carry out multi-step manipulation tasks — 74% success on long-horizon tasks (+29 pts over a VLM-only baseline).",
+    "stack": ["Python", "PyTorch", "Hugging Face Transformers", "QLoRA", "Isaac Sim", "ROS2", "Neuro-Symbolic"],
+    "problem": "Understanding a scene is not enough to complete a complex robotic task: the agent must also sequence the steps, retain relevant information from earlier interactions, and choose actions compatible with the task constraints. The goal was to raise manipulation success while cutting invalid actions, compared to a VLM-only approach.",
+    "solution": "The system pairs VLM-based perception with hierarchical planning (breaking goals into sub-steps), episodic memory (keeping context across interactions), and symbolic constraints that filter the model's proposed actions to prevent invalid decisions. The VLM is adapted with QLoRA for resource-efficient fine-tuning, on top of Isaac Sim, ROS2, PyTorch, and Hugging Face Transformers.",
+    "result": "Evaluated on 40 long-horizon manipulation tasks against a VLM-only baseline: 74% success (+29 percentage points), with the invalid-action rate reduced from 18% to 6% thanks to the symbolic constraints.",
+    "repo": null,
+    "demo": null
+  },
+  {
+    "id": "project-edge-vlm",
+    "year": "2025",
+    "category": "EDGE AI",
+    "image": "assets/projects/edge-vlm.jpeg",
+    "title": "EdgeVLM: Optimized Multimodal Inference for Robotics",
+    "summary": "An optimized multimodal inference pipeline for robotics with a C++ ROS2 integration — cutting GPU memory by 62% and P95 latency by 47% while keeping 97.5% of baseline task performance, via TensorRT and INT4 quantization.",
+    "stack": ["Python", "C++", "PyTorch", "TensorRT", "vLLM", "ONNX Runtime", "CUDA", "ROS2", "Docker"],
+    "problem": "Running multimodal models on a robot means balancing prediction quality, hardware limits, and response time. High memory use restricts deployment, while large or irregular latencies slow the robot's interaction with its environment. EdgeVLM set out to measure and improve this efficiency–quality trade-off.",
+    "solution": "The inference chain is built on PyTorch, vLLM, and ONNX with a C++ ROS2 interface in a Docker environment. Optimization relies on TensorRT for GPU execution, INT4 quantization to shrink the memory footprint, and careful benchmarking of GPU memory, latency, and downstream quality — using P95 latency to capture worst-case response times beyond the mean.",
+    "result": "Versus the reference configuration, TensorRT plus INT4 quantization cut GPU memory by 62% and P95 latency by 47% while retaining 97.5% of baseline downstream performance — a favorable trade-off for deploying multimodal models in robotics.",
+    "repo": null,
+    "demo": null
   }
 ]
